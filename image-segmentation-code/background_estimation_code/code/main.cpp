@@ -24,6 +24,8 @@
 
 #include"inc.hpp"
 #include"SequentialBge.hpp"
+#include <sstream>
+
 
 void numtostr(int num, char *str);
 
