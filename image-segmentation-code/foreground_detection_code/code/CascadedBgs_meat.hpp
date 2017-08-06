@@ -953,7 +953,7 @@ template<typename eT> void CascadedBgs<eT>::trace_blocks(
 			+ cascadedBgsParams->N), cvScalar(0, 0, 255), 1, 8, 0);
 	//cvShowImage("mainWin1", temp);
 	//cvWaitKey(10);
-	cvReleaseImage(&temp);
+	//cvReleaseImage(&temp);
 		}
 //	 FOR DEBUGGING PURPOSE ONLY+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
