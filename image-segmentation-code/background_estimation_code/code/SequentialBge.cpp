@@ -79,8 +79,8 @@ bg_est::bg_est(const cv::Mat &frame, const bge_params& in_bge_params)
 		estimated_bg_frame = cv::Mat::zeros(imsize, CV_8UC1);
 	}
 
-	cv::imshow("mainWin2", estimated_bg_frame);
-	cv::waitKey(1000);
+	//cv::imshow("mainWin2", estimated_bg_frame);
+	//cv::waitKey(1000);
 
 	DCT_coeffs.set_size(this->bge_params_obj->N * this->bge_params_obj->N * 4);
 	create_dct_table(this->bge_params_obj->N * 2);
@@ -340,8 +340,8 @@ void bg_est::partial_bg_construct(const cv::Mat &frame)
 	used_blks_pct /= bge_params_obj->len;
 	//	cout << used_blks_pct << endl;
 	//	cout << "----------" << endl;
-	cv::imshow("mainWin2", estimated_bg_frame);
-	cvWaitKey(10);
+	//cv::imshow("mainWin2", estimated_bg_frame);
+	//cvWaitKey(10);
 
 }
 
@@ -404,8 +404,8 @@ void bg_est::show_bg_frame(void)
 		y++;
 	}
 
-	cv::imshow("mainWin2", estimated_bg_frame);
-	cvWaitKey(2);
+	//cv::imshow("mainWin2", estimated_bg_frame);
+	//cvWaitKey(2);
 
 }
 
@@ -1397,8 +1397,8 @@ void bg_est::view_candidate(const vector<blk_stats> &block_info, int blk_n)
 
 		}
 	}
-	cv::imshow("mainWin1", img);
-	cv::waitKey(2);
+	//cv::imshow("mainWin1", img);
+	//cv::waitKey(2);
 }
 
 void bg_est::view_local_region(const mat &lblk)
@@ -1415,8 +1415,8 @@ void bg_est::view_local_region(const mat &lblk)
 		}
 	}
 
-	cv::imshow("mainWin1", img);
-	cv::waitKey(2);
+	//cv::imshow("mainWin1", img);
+	//cv::waitKey(2);
 }
 
 void bg_est::apply_ICM()

@@ -28,10 +28,10 @@ InputPreprocessor::InputPreprocessor(const rowvec &cur_param_vec,
 	in_data_format = type_unknown;
 	initialise_algorithm_parameters(cur_param_vec);
 
-	cvNamedWindow("mainWin1", CV_WINDOW_AUTOSIZE);
-	cvMoveWindow("mainWin1", 600, 40);
-	cvNamedWindow("mainWin2", CV_WINDOW_AUTOSIZE);
-	cvMoveWindow("mainWin2", 1000, 40);
+	//cvNamedWindow("mainWin1", CV_WINDOW_AUTOSIZE);
+	//cvMoveWindow("mainWin1", 600, 40);
+	//cvNamedWindow("mainWin2", CV_WINDOW_AUTOSIZE);
+	//cvMoveWindow("mainWin2", 1000, 40);
 
 }
 
@@ -40,8 +40,8 @@ InputPreprocessor::~InputPreprocessor()
 	cout << "exit successfully" << endl;
 
 
-	cvDestroyWindow("mainWin1");
-	cvDestroyWindow("mainWin2");
+	//cvDestroyWindow("mainWin1");
+	//cvDestroyWindow("mainWin2");
 
 }
 

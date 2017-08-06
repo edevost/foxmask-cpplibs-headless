@@ -178,8 +178,8 @@ int main(int argc, char **argv)
 			//read frame into 'input_mtx' and then store into 'padded_input_img'
 			config_obj.get_input_frame(result, i);
 
-			cv::imshow("mainWin1", config_obj.padded_input_img);
-			cvWaitKey(2);
+			//cv::imshow("mainWin1", config_obj.padded_input_img);
+			//cvWaitKey(2);
 			//object segmentation training
 			Obj.detectRaw(config_obj.padded_input_img);
 
@@ -206,7 +206,7 @@ int main(int argc, char **argv)
 			// upscale mask output in 'mask_mtx_us' depending on DS_RATIO
 			
 		   	config_obj.upscale_mask(Obj.rawMask);
-     			cv::imshow("mainWin2", config_obj.mask_mtx_us);
+     			//cv::imshow("mainWin2", config_obj.mask_mtx_us);
 			
 						
 
@@ -223,8 +223,8 @@ int main(int argc, char **argv)
 #endif
 
 
-			cv::imshow("mainWin1", config_obj.input_img_mtx);
-			cvWaitKey(2);
+			//cv::imshow("mainWin1", config_obj.input_img_mtx);
+			//cvWaitKey(2);
 			cout << " test frame: " << i << endl;
 
 		}
